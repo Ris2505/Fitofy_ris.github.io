@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+           <nav >
+              
+              <div class="logo">
+                 FITOFY
+              </div>
+              <div class="menu">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                  
+                    
+                    <li><a href="https://ris2505.github.io/caloriemeter.github.io/">CALORIEMETER</a></li>
+                    <li><a href="https://ris2505.github.io/yogapage.github.io/">Yoga</a></li>
+                    <li><a href="https://ris2505.github.io/workoutpage.github.io/">Workout</a></li>
+                    <li><a href='https://ris2505.github.io/rishabhjain.github.io/#'>Contact</a></li>
+                 </ul>
+              </div>
+           </nav>
+        </header>
+        
+    <div id="fitness_made_easy">
+        <video id="video1"  preload="auto" autoplay loop muted="muted" volume="0">       
+            <source src="Fitofy_videos/1.mp4" type="video/mp4"> 
+        </video>
+
+    </div>
+    <div id="fitness_made_easy2">
+        <video id="video2"  preload="auto" autoplay loop  muted="muted" volume="0">       
+            <source src="Fitofy_videos/2_new.mp4" type="video/mp4"> 
+        </video>
+
+    </div>
+    <div id="fitness_made_easy3">
+        <video id="video3"  preload="auto" autoplay loop muted="muted" volume="0">       
+            <source src="Fitofy_videos/3_new.mp4" type="video/mp4"> 
+        </video>
+
+    </div>
+    <div id="fitness_made_easy4">
+        <video id="video4"  preload="auto" autoplay loop muted="muted" volume="0">       
+            <source src="Fitofy_videos/4.mp4" type="video/mp4"> 
+        </video>
+
+    </div>
+    <div id="waste">
+        <p id="fit_text" >FITNESS Made Easier.</p>
+    </div>
+    
+
+    <div id="second">
+        <img  id="back" src="option1_new.png">
+        <div class="second_content_heading" data-aos="fade-left">
+            What we Offer
+
+        </div>
+            <div class="second_content" data-aos="fade-up">
+                Fitofy provides you answer to all your fitness related problems.
+                Here you can track your calories, pick your diet plan , workout plan and yoga plans.
+                <br>FITOFY makes fitness easier indeed!
+
+            </div>
+            
+        
+        
+        
+    </div>
+    <div id="just_back"></div>
+
+    <div class="container">
+        <div class="abc0">
+          <h2 class="content_grid">KIDS</h2>
+         
+          <a href="https://ris2505.github.io/workoutpage.github.io/" class="button0">GO</a>
+        </div>
+        <div class="abc5">
+          <h2 class="content_grid_5">CALORIMETER</h2>
+          
+          <a href="https://ris2505.github.io/caloriemeter.github.io/" class="button5">GO</a>
+        </div>
+        <div class="abc4">
+          <h2 class="content_grid_4">WORKOUT</h2>
+          <p class="content4"></p>
+          <a href="https://ris2505.github.io/workoutpage.github.io/" class="button4">GO</a>
+        </div>
+        <div class="abc8">
+          <h2 class="content_grid_8">YOGA</h2>
+          
+          <a href="https://ris2505.github.io/yogapage.github.io/" class="button8">GO</a>
+        </div>
+        <div class="abc7">
+            <h2 class="content_grid_7">WOMEN</h2>
+            
+            <a href="https://ris2505.github.io/workoutpage.github.io/" class="button7">GO</a></div>
+        <div class="abc2">
+          <h2 class="content_grid_2">MENTAL HEALTH</h2>
+          
+          <a href="#" class="button2">GO</a></div>
+        <div class="abc3">
+          <h2 class="content_grid_3">DIET</h2>
+         
+          <a href="#" class="button3">GO</a>
+        </div>
+        <div class="abc6">
+            <p class="content_fitofy">FITOFY</p>
+        </div>
+      </div>
+
+
+      <div class="third">
+      <img  id="back2" src="swimm.jpg">
+      <p id="third_text" >RISHABH JAIN</p>
+     
+            <a href='https://ris2505.github.io/Flipo.github.io/' class="fa fa-github" style="position:absolute; font-size:24px; top:65%; left:50%; color:white"></a>
+<a href="#" class="fa fa-linkedin" style="position:absolute; font-size:24px; top:65%; left:53% ;
+color:white"></a>
+    </div>
+      
+
+    
+    
+    
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+<script>
+     AOS.init();
+
+
+    var i = 1;
+    var video1 = document.getElementById('fitness_made_easy');
+    var video2 = document.getElementById('fitness_made_easy2');
+    var video3= document.getElementById('fitness_made_easy3');
+    var video4 = document.getElementById('fitness_made_easy4');
+    video1.style.display="block"; 
+    video2.style.display="none"; 
+    video3.style.display="none"; 
+    video4.style.display="none";
+
+    var interval = setInterval( increment, 4000);
+
+    function increment(){
+        
+        if(i==1)
+        {
+            video1.style.display="block"; 
+           video2.style.display="none"; 
+           video3.style.display="none"; 
+           video4.style.display="none"; 
+
+
+        }
+        else if(i==2)
+        {
+            video2.style.display="block"; 
+           video1.style.display="none"; 
+           video3.style.display="none"; 
+           video4.style.display="none"; 
+
+        }
+        else if(i==3)
+        {
+            video3.style.display="block"; 
+           video1.style.display="none"; 
+           video2.style.display="none"; 
+           video4.style.display="none"; 
+
+        }
+        else if(i==4)
+        {
+            video4.style.display="block"; 
+           video1.style.display="none"; 
+           video3.style.display="none"; 
+           video2.style.display="none"; 
+
+        }
+        else{
+            i=0;
+        }
+        i=i+1;
+
+}
+line = document.getElementById("line");
+box1 = document.getElementById("box1");
+
+/*var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 300) {
+        type_heading.className = "type_heading animate_heading1";
+        type_heading2.className="type_heading2 animate_heading2";
+    } else {
+        type_heading.className = "type_heading";
+        type_heading2.className="type_heading2";
+    }
+};*/
+var myScrollFunc2 = function () {
+    var y = window.scrollY;
+    if (y >= 300) {
+        line.className = "line show animateabc"
+        box1.classname = "box1 animatebox";
+    } else {
+        line.className = "line hide";
+        box1.className="box1 "
+    }
+};
+
+window.addEventListener("scroll",myScrollFunc2);
+
+
+</script>
+</body>
+</html>

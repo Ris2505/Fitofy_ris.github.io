@@ -1,0 +1,495 @@
+.container {  display: grid;
+    width: 100%;
+    height:550px;
+    position: relative;
+    top: 1000px;
+    
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:14px 14px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "abc0 abc0 abc4 abc4 abc4 abc7 abc7 abc8 abc8"
+      "abc0 abc0 abc4 abc4 abc4 abc7 abc7 abc8 abc8"
+      "abc0 abc0 abc3 abc3 abc6 abc6 abc6 abc8 abc8"
+      "abc2 abc2 abc3 abc3 abc5 abc5 abc5 abc5 abc5";
+  }
+  
+  .abc0 { 
+    grid-area: abc0;
+    background-image: url("kids\ \(1\).jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:transform 300ms ease;
+    overflow: hidden;
+    
+     }
+   
+  
+  .abc2 { grid-area: abc2;
+   
+    background-image: url("mental.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition:transform 300ms ease;
+    overflow: hidden;
+     }
+  
+  .abc3 { grid-area: abc3;
+    
+    background-image: url("diet.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:transform 500ms ease;
+overflow: hidden
+  }
+  .content2{
+    position: relative;
+    top:150px;
+    text-align: center;
+    left:0px;
+    transform: translateY(50%);
+    transition: transform 500ms ease;
+    color: white;
+    display:inline-block;
+    height:200px;
+    width :100%;
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 10%,
+      hsl(0 0% 0% / 1)
+    );
+  }
+  .button2{
+    position: relative;
+    top:100px;
+    left: 150px;
+    transform: translateY(50%);
+    transition: transform 500ms ease;
+    color: white;
+    display:inline-block;
+  
+  }
+  .abc2:hover>.content2{
+    transform: translateY(-200px);
+   
+  }
+  .abc2:hover>.button2{
+    transform: translateY(-310px);
+   
+  }
+  
+  .abc2:hover>.content_grid_2{
+    
+    transform: translateY(-65px);
+    
+  }
+  .abc5 { grid-area: abc5; 
+   
+    background-image: url("calories.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    transition:transform 500ms ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   overflow: hidden;
+     
+  }
+  
+  .abc4 { grid-area: abc4;
+    
+    background-image: url("gym.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    transition:transform 500ms ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; 
+  }
+  
+  .abc6 { grid-area: abc6;
+    background-color: black;
+    border-radius: 0.8rem;
+    transition:transform 500ms ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow:hidden;   }
+  
+  .abc7 { grid-area: abc7;
+   
+    background-image: url("woman.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    transition:transform 500ms ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;  
+   
+ }
+  
+  .abc8 { grid-area: abc8;
+    
+    background-image: url("yoga.jpg");
+    background-size: cover;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:transform 500ms ease;
+    overflow: hidden;  
+    
+ }
+  .content_grid{
+    position: relative;
+    top:235px;
+    left:60px;
+      font-size: 70px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      transition: transform 500ms ease;
+       
+      
+  }
+  .content_grid_2{
+    position: relative;
+    top: 50px;
+    left:15px;
+      font-size: 30px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      transition: transform 500ms ease;
+       
+  }
+  .content_grid_8{
+    position: relative;
+    top:220px;
+    left:45px;
+      font-size: 70px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      transition: transform 500ms ease;
+       
+  }
+  .content_grid_5{
+    position: relative;
+    top:10px;
+    left:400px;
+      font-size: 45px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      transition: transform 800ms ease;
+       
+
+  }
+  .content_grid_3{
+    position: relative;
+    top:150px;
+    left:90px;
+      font-size: 50px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      transition: transform 500ms ease;
+       
+
+  }
+  .content_grid_4{
+    position: relative; 
+    top:135px;
+    left:80px;
+      font-size: 50px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      transition: transform 500ms ease;
+    }
+
+.content_grid_7{
+  position: relative; 
+  top:145px;
+  left:60px;
+    font-size: 45px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    transition: transform 500ms ease;
+  }
+    
+.content0{
+  position: relative;
+  top:200px;
+  text-align: center;
+  left:0px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+  height:200px;
+  width :100%;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button0{
+  position: relative;
+  top:100px;
+  left: 150px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc0:hover>.content0{
+  transform: translateY(-200px);
+ 
+}
+.abc0:hover>.button0{
+  transform: translateY(-200px);
+ 
+}
+
+.abc0:hover>.content_grid{
+  
+  transform: translateY(-200px);
+  
+}
+.content4{
+  position: relative;
+  top:150px;
+  text-align: center;
+  left:0px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+  height:200px;
+  width :100%;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button4{
+  position: relative;
+  top:100px;
+  left: 150px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc4:hover>.content4{
+  transform: translateY(-180px);
+ 
+}
+.abc4:hover>.button4{
+  transform: translateY(-300px);
+ 
+}
+
+.abc4:hover>.content_grid_4{
+  
+  transform: translateY(-150px);
+  
+}
+.content8{
+  position: relative;
+  top:150px;
+  text-align: center;
+  left:0px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+  height:200px;
+  width :100%;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button8{
+  position: relative;
+  top:100px;
+  left: 150px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc8:hover>.content8{
+  transform: translateY(-150px);
+ 
+}
+.abc8:hover>.button8{
+  transform: translateY(-200px);
+ 
+}
+
+.abc8:hover>.content_grid_8{
+  
+  transform: translateY(-250px);
+  
+}
+.content7{
+  position: relative;
+  top:150px;
+  text-align: center;
+  left:0px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+  height:200px;
+  width :100%;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button7{
+  position: relative;
+  top:100px;
+  left: 150px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc7:hover>.content7{
+  transform: translateY(-180px);
+ 
+}
+.abc7:hover>.button7{
+  transform: translateY(-300px);
+ 
+}
+
+.abc7:hover>.content_grid_7{
+  
+  transform: translateY(-150px);
+  
+}
+.content3{
+  position: relative;
+  top:150px;
+  text-align: center;
+  left:0px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+  height:200px;
+  width :100%;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button3{
+  position: relative;
+  top:100px;
+  left: 150px;
+  transform: translateY(50%);
+  transition: transform 500ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc3:hover>.content3{
+  transform: translateY(-190px);
+ 
+}
+.abc3:hover>.button3{
+  transform: translateY(-300px);
+ 
+}
+
+.abc3:hover>.content_grid_3{
+  
+  transform: translateY(-170px);
+  
+}
+.content5{
+  position: relative;
+  bottom:150px;
+  text-align: center;
+  line-height: 100px;
+  left:500px;
+  transform: translateX(70%);
+  transition: transform 800ms ease;
+  color: white;
+  height:200px;
+  width :50%;
+  background: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+  );
+}
+.button5{
+  position: relative;
+  bottom:250px;
+  left:800px;
+  transform: translateX(70%);
+  transition: transform 800ms ease;
+  color: white;
+  display:inline-block;
+
+}
+.abc5:hover>.content5{
+  transform: translateX(-100px);
+ 
+}
+.abc5:hover>.button5{
+  transform: translateX(-200px);
+ 
+}
+
+.abc5:hover>.content_grid_5{
+  
+  transform: translateX(-370px);
+  
+}
+.abc0:hover{
+  transform: scale(1.05);
+  
+  
+}
+.abc2:hover{
+  transform: scale(1.05);
+}
+.abc3:hover{
+  transform: scale(1.05);
+}
+.abc4:hover{
+  transform: scale(1.05);
+}
+
+.abc5:hover{
+  transform: scale(1.05);
+}
+.abc6:hover{
+  transform: scale(1.05);
+}
+.abc7:hover{
+  transform: scale(1.05);
+}
+.abc8:hover{
+  transform: scale(1.05);
+}
